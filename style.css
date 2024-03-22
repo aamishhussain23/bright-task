@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Inter:wght@400;700&family=Open+Sans:ital,wght@1,300&family=Roboto:wght@400;500&family=Single+Day&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #ddeaf5;
+    --heading-color: #9cd5f6;
+    --child-circle-color: #a3cff5;
+    --paragraph-color: #044c8c;
+    --text-color: #60b1f7;
+    --font: 'DM Sans'; 
+}
+
+body, .parent{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+header{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.group_1 > h1{
+    font-size: 7rem;
+    color: var(--heading-color);
+    font-family: var(--font);
+    font-weight: 700;
+    position: relative;
+    top: 18%;
+}
+
+.group_1 > p{
+    text-align: center;
+    color: var(--paragraph-color);
+    font-family: var(--font);
+    font-weight: 600;
+    width: 35rem;
+    font-size: 1.8rem;
+    position: relative;
+    bottom: 8%;
+}
+
+main{
+    height: 70%;
+    width: 100%;
+}
+
+.section_1, .section_2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 15rem;
+    width: 25rem;
+    position: relative;
+}
+
+.box1, .box2{
+    right: 5%;
+}
+
+.box3, .box4{
+    left: 5%;
+}
+
+.outer_circle{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 2px solid rgb(180, 180, 242);
+}
+
+.card{
+    z-index: 999;
+    background-color: whitesmoke;
+    height: 75%;
+    width: 75%;
+    position: relative;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card > h3, .card > h4{
+    text-align: center;
+}
+
+h3{
+    color: var(--paragraph-color);
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+h4{
+    color: rgb(27, 197, 227);
+    width: 70%;
+    font-weight: 700;
+}
+
+.card_1{
+    left: 20%;
+    bottom: 50%;
+}
+
+.card_2{
+    top: 16%;
+    left: 6%;
+}
+
+.card_4{
+    top: 5%;
+    left: 6%;
+}
+
+.outer_circle_2{
+    position: absolute;
+    right: 0%;
+}
+
+.outer_circle_3{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.outer_circle_4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.inner_circle{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--heading-color);
+}
+
+.inner_circle_1{
+    left: 12%;
+    top: 8%;
+}
+
+.inner_circle_2{
+    top: 5%;
+}
+
+.inner_circle_4{
+    top: 2%;
+    right: 1%;
+}
+
+.section_2{
+    height: 50%;
+    width: 100%;
+}
+
+@media screen and (max-width: 980px){
+    .section_1, .section_2{
+        justify-content: center;
+    }
+    .box1, .box2{
+        right: 0%;
+    }
+    .box3, .box4{
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    .group_1 > h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .group_1 > p{
+        font-size: 1rem;
+        width: 20rem;
+    }
+    .box{
+        height: 12rem;
+        width: 20rem;
+    }
+    .outer_circle{
+        height: 8rem;
+        width: 8rem;
+        
+    }
+    h3{
+        font-size: small;
+    }
+    h4{
+        font-size: smaller;
+        width: 90%;
+    }
+    .card{
+        height: 60%;
+        width: 60%;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px){
+    header{
+        height: 30%;
+    }
+    main{
+        height: 110%;
+    }
+    .card_2{
+        top: 18%;
+        left: 20%;
+    }
+    .inner_circle_3{
+        left: 12%;
+        top: 8%;
+    }
+    .card_4{
+        top: 20%;
+        left: 20%;
+    }
+
+    .outer_circle_3{
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+    }
+}
